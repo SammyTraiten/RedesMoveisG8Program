@@ -9,7 +9,7 @@ import { Mensagem } from '../interfaces/mensagem';
 })
 export class ChatPage {
   mensagens:any;
-  mensagemE:Mensagem={id:0,username:"",pais:"", mensagem:""};
+  mensagemE:Mensagem={id:0,iduti:0,username:"",pais:"", mensagem:""};
   id:any;
   pais:any;
   constructor(private http: BasededadosService, private nativeStorage : NativeStorage) { 
@@ -26,13 +26,14 @@ export class ChatPage {
                       this.pais=datadois.property;
                       this.mensagemE.username=data.property;
                       this.mensagemE.pais=datadois.property;
-                      this.mensagemE.id=datatres.property;
+                      this.mensagemE.iduti=datatres.property; 
                       this.getallmensagens();
                     });
-              });
-          
+              });          
         });
-        
+       
+        setInterval(()=> {
+          this.getallmensagens(); },5000); 
   }
 
   submitmensagem(mensagem){

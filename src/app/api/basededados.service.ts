@@ -37,7 +37,7 @@ export class BasededadosService {
   }
 
   addmessage(message){
-    return this.http.post("http://192.168.1.65:3000/Chat/",message);
+    return this.http.post("http://192.168.1.65:3000/Chat",message);
   }
 
   getallmessages(){

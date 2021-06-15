@@ -2,7 +2,7 @@
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-menu-button color="dark"></ion-menu-button>
-      <ion-title>Perfil</ion-title>
+      <ion-title>Chat</ion-title>
     </ion-buttons>
     </ion-toolbar>
 </ion-header>
@@ -11,8 +11,8 @@
 <ion-list id="tamanhochat">
   <ion-list *ngFor="let mensagemR of mensagens">
     <ion-item *ngIf="(mensagemR.pais==pais)">
-      <ion-label slot="end" color="primary" *ngIf="mensagemR.id==id">{{mensagemR.username}}<ion-item slot="end" color="primary">{{mensagemR.mensagem}}</ion-item></ion-label>
-      <ion-label slot="start" color="secondary" *ngIf="mensagemR.id!=id">{{mensagemR.username}}<ion-item slot="start" color="secondary" >{{mensagemR.mensagem}}</ion-item></ion-label>
+      <ion-label slot="end" color="primary" *ngIf="mensagemR.iduti==id">{{mensagemR.username}}<ion-item slot="end" color="primary">{{mensagemR.mensagem}}</ion-item></ion-label>
+      <ion-label slot="start" color="secondary" *ngIf="mensagemR.iduti!=id">{{mensagemR.username}}<ion-item slot="start" color="secondary" >{{mensagemR.mensagem}}</ion-item></ion-label>
      
     </ion-item>
   </ion-list>
