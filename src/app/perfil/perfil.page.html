@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark"></ion-menu-button>
+      <ion-title>Perfil</ion-title>
+    </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="\assets\17004.png"></ion-img>
+  <ion-item>Nome: {{User.nome}}</ion-item>
+  <ion-item>Username: {{User.username}}</ion-item>
+  <ion-item>Email: {{User.email}}</ion-item>
+  <ion-item>Pais: {{User.pais}}</ion-item>
+  <ion-item>Kms percorridos: {{User.kmspercorridos}}km</ion-item>
+  <ion-item>Tempo em viagem: {{User.tempomedio}}h</ion-item>
+
+  <ion-item color="primary">
+  <ion-title>Update Country-></ion-title>
+  <ion-input color="dark" placeholder="Pais:" [(ngModel)]="User.pais"></ion-input>
+  <ion-button color="secondary" (click)="updateUser()" >Update</ion-button>
+  </ion-item>
+</ion-content>

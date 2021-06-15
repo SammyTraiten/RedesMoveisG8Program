@@ -1,0 +1,7 @@
+{
+  "name": "RedesMoveis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

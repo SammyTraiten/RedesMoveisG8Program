@@ -1,0 +1,18 @@
+<ion-menu side="start" menuId="first" contentId="main" swipe-gesture="false" type="push">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item href="initial-location">Mapa</ion-item>
+        <ion-item href="perfil">Perfil</ion-item>
+        <ion-item href="historico">Histórico</ion-item>
+        <ion-item href="chat">Chat</ion-item>
+        <ion-item (click)="onLogout()" href="home">Logout</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
