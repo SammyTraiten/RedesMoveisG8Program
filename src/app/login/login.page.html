@@ -1,23 +1,22 @@
-<ion-content class="bg">
-  <div class="aa"></div>
-<div class="centrardois">
-  <ion-text><h1>Iniciar Sessão</h1></ion-text> 
+<ion-content color=tertiary>
+  <div id="container">
+  <ion-card color = primary>
+    <div>
+      <ion-text><h1>Iniciar Sessão</h1></ion-text> 
+    </div>
+    <div class="primary">
+      <ion-item color="primary">
+        <ion-input  placeholder="Email" [(ngModel)]="email"></ion-input>
+      </ion-item>
+
+      <ion-item color="primary">
+        <ion-input  placeholder="Password"  type=password [(ngModel)]="password"></ion-input>
+      
+      </ion-item>
+    </div>
+
+    <ion-button (click)="SignIn(email,password)" expand="full" color=secondary ><ion-text color="light">Sign In</ion-text></ion-button>
+    <ion-button href="registo" expand="full" color=secondary> <ion-text color="light" >Register</ion-text></ion-button>
+  </ion-card>
 </div>
-
-<div class="centrar">
-  <ion-item color="warning">
-    <ion-input  placeholder="Email" [(ngModel)]="email"></ion-input>
-  </ion-item>
-
-  <ion-item color="warning">
-    <ion-input  placeholder="Password" [(ngModel)]="password"></ion-input>
-  
-  </ion-item>
-</div>
-
-<ion-button (click)="SignIn(email,password)" expand="full" fill="clear" shape="round"><ion-text color="dark">Sign In</ion-text></ion-button>
-<div class="bb"></div>
-<ion-button href="registo" expand="full" fill="clear"> <ion-text color="dark" >Register</ion-text></ion-button>
-
-
 </ion-content>

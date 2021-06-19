@@ -7,3 +7,20 @@
     height:7%;
     width:100%;
 }
+
+.message{
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+}
+
+.user{
+    background: var(--ion-color-secondary);
+    color: #fff;
+}
+
+.other{
+    background: var(--ion-color-primary);
+    color:#fff;
+}

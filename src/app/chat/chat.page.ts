@@ -33,7 +33,7 @@ export class ChatPage {
         });
        
         setInterval(()=> {
-          this.getallmensagens(); },5000); 
+          this.getallmensagens(); },1000); 
   }
 
   submitmensagem(mensagem){

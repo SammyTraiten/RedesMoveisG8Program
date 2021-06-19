@@ -25,7 +25,7 @@ export class PerfilPage {
   getUserInfo(id){
     this.http.getUser(id).subscribe((data:any)=>{
       console.log(data);
-      this.User=data[0];
+      this.User=data;
     });
   }
 

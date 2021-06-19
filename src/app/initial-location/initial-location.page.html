@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-menu-button color="dark"></ion-menu-button>
+      <ion-menu-button ></ion-menu-button>
     </ion-buttons>
     <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="UpdateSearch()" placeholder="Search for a place"  (ionClear)="ClearSearch()" show-cancel-button="always" animated ></ion-searchbar>
     <ion-list [hidden]="autocompleteItems.length == 0">

@@ -4,14 +4,14 @@
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item href="initial-location">Mapa</ion-item>
-        <ion-item href="perfil">Perfil</ion-item>
-        <ion-item href="historico">Histórico</ion-item>
-        <ion-item href="chat">Chat</ion-item>
-        <ion-item (click)="onLogout()" href="home">Logout</ion-item>
-      </ion-list>
+    <ion-content color=secondary>
+      <ion-grid>
+        <ion-row><ion-col size=9><ion-item color = secodary href="initial-location">Map</ion-item></ion-col></ion-row>
+        <ion-row><ion-col size= 9><ion-item color=secondary  href="perfil">Profile</ion-item></ion-col></ion-row>
+        <ion-row><ion-col size=9><ion-item color=secondary href="historico">History</ion-item></ion-col></ion-row>
+        <ion-row><ion-col size=9><ion-item color=secondary href="chat">Chat</ion-item></ion-col></ion-row>
+        <ion-row><ion-col size=9><ion-item color=secondary (click)="onLogout()" href="home">Logout</ion-item ></ion-col></ion-row>
+      </ion-grid>
     </ion-content>
   </ion-menu>
 

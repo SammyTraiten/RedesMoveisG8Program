@@ -297,7 +297,7 @@ export class InitialLocationPage{
       if(obj.rows[0].elements[0].status=="OK"){
         let Infoalert =  Modals.confirm({
           title: 'Information',
-          message: 'Origem:'+obj.origin_addresses+'\nDestino:'+obj.destination_addresses+'\nDistancia:'+(obj.rows[0].elements[0].distance.value/1000).toFixed(2)+'km \nDuracao:'+(obj.rows[0].elements[0].duration.value/3600).toFixed(2)+'h'
+          message: 'Origin:'+obj.origin_addresses+'\nDestination:'+obj.destination_addresses+'\nDistance:'+(obj.rows[0].elements[0].distance.value/1000).toFixed(2)+'km \nDuration:'+(obj.rows[0].elements[0].duration.value/3600).toFixed(2)+'h'
         });
         console.log('Infoalert', Infoalert);
       }

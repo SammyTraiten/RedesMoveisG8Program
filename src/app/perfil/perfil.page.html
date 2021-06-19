@@ -1,24 +1,41 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-menu-button color="dark"></ion-menu-button>
-      <ion-title>Perfil</ion-title>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Profile</ion-title>
     </ion-buttons>
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color=tertiary>
   <ion-img src="\assets\17004.png"></ion-img>
-  <ion-item>Nome: {{User.nome}}</ion-item>
-  <ion-item>Username: {{User.username}}</ion-item>
-  <ion-item>Email: {{User.email}}</ion-item>
-  <ion-item>Pais: {{User.pais}}</ion-item>
-  <ion-item>Kms percorridos: {{User.kmspercorridos}}km</ion-item>
-  <ion-item>Tempo em viagem: {{User.tempomedio}}h</ion-item>
+  <ion-item color=tertiary><ion-text color=secondary>Name: {{User.nome}}</ion-text></ion-item>
+  <ion-item color=tertiary><ion-text color=secondary>Username: {{User.username}}</ion-text></ion-item>
+  <ion-item color=tertiary><ion-text color=secondary>Email: {{User.email}}</ion-text></ion-item>
+  <ion-item color=tertiary><ion-text color=secondary>Country: {{User.pais}}</ion-text></ion-item>
+  <ion-item color=tertiary><ion-text color=secondary>Kilometers traveled: {{User.kmspercorridos}}km</ion-text></ion-item>
+  <ion-item color=tertiary><ion-text color=secondary>Travel time: {{User.tempomedio}}h</ion-text></ion-item>
 
-  <ion-item color="primary">
-  <ion-title>Update Country-></ion-title>
-  <ion-input color="dark" placeholder="Pais:" [(ngModel)]="User.pais"></ion-input>
-  <ion-button color="secondary" (click)="updateUser()" >Update</ion-button>
-  </ion-item>
+  
 </ion-content>
+<ion-footer>
+  <ion-toolbar color = primary>
+    <ion-grid>
+        <ion-row>
+          <ion-col size=7>
+            <ion-item color = primary>
+            Update your country here
+            </ion-item>
+          </ion-col>
+          <ion-col size=3>
+            <ion-item color=primary>
+            <ion-input placeholder="Country" [(ngModel)]="User.pais"></ion-input>
+          </ion-item>
+          </ion-col>
+          <ion-col size=2>
+            <ion-button fill=clear (click)="updateUser()" ><ion-icon color=secondary  name="checkmark-circle"></ion-icon></ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-toolbar>
+</ion-footer>
